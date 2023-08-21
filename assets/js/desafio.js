@@ -1,5 +1,18 @@
-/*
-getZodiacSign() {
+class User{
+    constructor(name, email, birthdate, city, phone, cpf){
+     this.name = name 
+     this.email = email;
+     this.birthdate = birthdate;
+     this.city = city;
+     this.phone =phone;
+     this.cpf = cpf;
+     this.age = this.calcAge();
+     this.ZodiacSign = this.getZodiacSign();
+}
+
+
+}
+ function getZodiacSign() {
     let birthdate = new Date(this.birthdate);
     let day = birthdate.getDate();
     let month = birthdate.getMonth() + 1;
@@ -104,9 +117,9 @@ function sendErrorMsg(msg) {
     setTimeout(function () {
         document.getElementById("error-msg").classList.add("hidden");
     }, 4000);
-}
 
-*/
+
+}
 
 // how many functions are there? 12
 // how many classes are there? 2
