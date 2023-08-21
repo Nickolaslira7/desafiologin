@@ -162,7 +162,20 @@ function sendSucessMsg(msg){
 
     },4000);
 }
+function createUser(){
+    const UsersName = Document.getElementById('name').value;
+    const UsersEmail = document.getElementById('email').value;
+    const UsersBirthdate = document.getElementById('birthdate').value;
+    const UsersAdress = document.getElementById('address').value;
+    const UsersSign = document.getElementById('sign').value;
+    const UsersAge = document.getElementById('birthdate').value;
+    const UsersCellphones= document.getElementById('phone').value;
+    const UsersCpf= document.getElementById('cpf').value;
+    console.log("Estive no Created Users");
 
+
+    
+}
 // how many functions are there? 12
 // how many classes are there? 2
 
