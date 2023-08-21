@@ -1,29 +1,42 @@
-class User{
-    constructor(name, email, birthdate, city, phone, cpf){
+class LoginForm{
+    constructor(name, email, birthdate, address, cellphone, cpf){
      this.name = name 
      this.email = email;
      this.birthdate = birthdate;
-     this.city = city;
-     this.phone =phone;
-     this.cpf = cpf;
-     this.age = this.calcAge();
-     this.ZodiacSign = this.getZodiacSign();
-     this.potencialCliente = this.verifyPotencialCliente = this.verifyPotencialClient(this.age);
+     this.address = address;
+     this.cellphone = cellphone;
+     this.cpfs = cpf;
 } 
 
 }
-function getAge(dataString) {
-    const today = new Date();
-    const birthDate = new Date(dataString);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
+class Users{
+   constructor(sign, address){
+    this.sign = sign;
+    this.adress = address;
+   }
 
-    if(m<0 || (m === 0 && today.getDate())){
-        age--;
-    } return age
-    console.log(get/age)
+} 
+const user = new LoginForm();
+class userList{
+    constructor(){
+        this.users=[];
+    } 
+    addUsers(){
+        this.userssers.push(user)
+    }
 }
-
+function IsEmpty(){
+    if(document.form.question.value==""){
+        alert("empty");
+    }
+    return;
+}
+function Sign(){
+    getZodiacSign(birthdate);{
+        let birthdate = new Date (this.birthdate);
+    let day = birthDate.getDate();
+let month= birthdate.getMonth() +1;
+console.log("Passou pelo getSigno() da class User");
 
  function getZodiacSign() {
     let birthdate = new Date(this.birthdate);
@@ -55,8 +68,14 @@ function getAge(dataString) {
         return "Escorpião ♏";
     } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
         return "Sagitário ♐";
+
+    
+    }
+    
+}
     }
 }
+
 
 function showRegister() {
     document.getElementById("sub-div").classList.add("hidden");
@@ -133,6 +152,7 @@ function sendErrorMsg(msg) {
 
 
 }
+
 
 // how many functions are there? 12
 // how many classes are there? 2
