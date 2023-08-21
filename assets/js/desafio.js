@@ -8,10 +8,23 @@ class User{
      this.cpf = cpf;
      this.age = this.calcAge();
      this.ZodiacSign = this.getZodiacSign();
+     this.potencialCliente = this.verifyPotencialCliente = this.verifyPotencialClient(this.age);
+} 
+
+}
+function getAge(dataString) {
+    const today = new Date();
+    const birthDate = new Date(dataString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if(m<0 || (m === 0 && today.getDate())){
+        age--;
+    } return age
+    console.log(get/age)
 }
 
 
-}
  function getZodiacSign() {
     let birthdate = new Date(this.birthdate);
     let day = birthdate.getDate();
