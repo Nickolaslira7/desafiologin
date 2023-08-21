@@ -153,6 +153,15 @@ function sendErrorMsg(msg) {
 
 }
 
+function sendSucessMsg(msg){
+    console.log("Passou pela função sendSucessMsg()");
+    document.getElementById("sucess-msg").innerHTML = msg;
+    Document.getElementById("success=msg").classList.remove("hidden");
+    setTimeout(function (){
+        document.getElementById("success-msg").classList.add("hidden");
+
+    },4000);
+}
 
 // how many functions are there? 12
 // how many classes are there? 2
